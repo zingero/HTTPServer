@@ -1,0 +1,6 @@
+<h1>{{.Title}}</h1>
+
+<form action="/encrypt" method="POST">
+<div><textarea name="plaintext" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+<div><input type="submit" value="Send"></div>
+</form>
